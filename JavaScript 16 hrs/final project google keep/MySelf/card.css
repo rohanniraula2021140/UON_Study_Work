@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+ body {
+	 margin: 0;
+	 padding: 0;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-family: "Righteous", cursive;
+	 min-height: 100vh;
+	 background-color: #a9c9ff;
+	 background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+}
+.main{
+    color: white;
+}
+ body .container {
+	 max-width: 70vw;
+	 display: grid;
+	 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	 grid-gap: 35px;
+	 margin: auto auto;
+	 padding: 40px 0;
+}
+ body .container .card {
+	 position: relative;
+	 width: 300px;
+	 height: 400px;
+	 margin:  auto;
+	 background: #000;
+	 border-radius: 15px;
+	 box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+
+
+ body .container .card .face {
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ body .container .card .face.face1 {
+	 box-sizing: border-box;
+	 padding: 20px;
+}
+ body .container .card .face.face1 h2 {
+	 margin: 0;
+	 padding: 0;
+}
+ body .container .card .face.face1 .java {
+	 background-color: #fffc00;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
+ body .container .card .face.face1 .python {
+	 background-color: #00fffc;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
+ body .container .card .face.face1 .cSharp {
+	 background-color: #fc00ff;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
+ body .container .card .face.face2 {
+	 transition: 0.5s;
+}
+ body .container .card .face.face2 h2 {
+	 margin: 0;
+	 padding: 0;
+	 font-size: 10em;
+	 color: #fff;
+	 transition: 0.5s;
+	 text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	 
+}
+ body .container .card:hover .face.face2 {
+	 height: 60px;
+}
+ body .container .card:hover .face.face2 h2 {
+	 font-size: 2em;
+}
+ body .container .card:nth-child(1) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(2) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(3) .face.face2 {
+	 background-image: linear-gradient(40deg, #bed622 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(4) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(5) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(6) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(7) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(8) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(9) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(10) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(11) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(12) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(13) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(14) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(15) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(16) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(17) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(18) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(19) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(20) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(21) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(22) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(23) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(24) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(25) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(26) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(27) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(28) .face.face2 {
+	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(29) .face.face2 {
+	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+ body .container .card:nth-child(30) .face.face2 {
+	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+	 border-radius: 15px;
+}
+
+
+.edit{
+	background-color: rgb(10, 88, 51);
+	color: white;
+	float: right;
+} 
+.delete{
+	background-color: rgb(159, 14, 14);
+	color: white;
+	float: left;
+}
+
+.menuBar{
+	display: inline;
+}

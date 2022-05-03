@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+header{
+    width: 100%;
+    line-height: 15vh;
+    background-color: #20bf6b;
+
+}
+
+h1{
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    color:white;
+    font-size: 1.8rem;
+    letter-spacing: 15px;
+    text-shadow: 1px 2px 8px rgba(117, 184, 119, 1);
+    text-transform: uppercase;
+}
+
+section{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7bed9f;
+
+}
+
+.gameArea{
+    width: 50%;
+    height: 400px;
+    padding: 20px 0;
+    background-color: #2ed573;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-shadow: 0 8px 6px -6px black; 
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+input{
+    width: 40%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #ddf9bf;
+    color: black;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+
+button{
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: #2f3542;
+    margin-top: 10px;
+    color: #eb4d4b;
+}
+
+button.btn{
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: white;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+
+button.btn:hover, button.btn:focus, button.btn:active{
+    letter-spacing: 0.125rem;
+    word-spacing: 0.2rem;
+}
+
+.hidden{
+    display: none ;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #8244c4 29%,
+    #8b6454 67%,
+    #10176a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

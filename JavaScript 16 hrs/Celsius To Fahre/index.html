@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="range.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="radio"
+      name="choice"
+      id="javascript"
+      checked="checked"
+      onclick="tempSelected(0)"
+    /><input
+      type="radio"
+      name="choice"
+      id="typescript"
+      onclick="tempSelected(1)"
+    />
+    <div class="scene">
+      <label for="typescript"></label><label for="javascript"></label>
+      <div class="card">
+        <div class="card__content">
+          Slide the SlideBar.
+
+          <input
+            type="range"
+            class="range"
+            min="-100"
+            max="300"
+            style="z-index: 4"
+            onChange="rangeSlide(this.value, 0, 1)"
+            onmousemove="rangeSlide(this.value, 1, 0)"
+          />
+        </div>
+
+        <footer class="card__footer">
+          <img
+            src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Small.png"
+          /><span>Cards Against Developers<sub>vol. 2</sub></span>
+        </footer>
+      </div>
+      <div class="card card--answer card--javascript">
+        <div class="card__content">
+          Celsius<br />
+          <h1 id="cel">°C</h1>
+        </div>
+        <footer class="card__footer">
+          <img
+            src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png"
+          /><span>Cards Against Developers<sub>vol. 2</sub></span>
+        </footer>
+      </div>
+
+      <div class="card card--answer card--typescript">
+        <div class="card__content">
+          Fahreneit<br />
+          <h1 id="fahr">°F</h1>
+        </div>
+        <footer class="card__footer">
+          <img
+            src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png"
+          /><span>Cards Against Developers<sub>vol. 2</sub></span>
+        </footer>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
