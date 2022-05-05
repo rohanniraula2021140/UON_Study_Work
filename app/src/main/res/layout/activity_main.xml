@@ -53,13 +53,61 @@
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@id/idTVPassword"/>
 
+    <TextView
+        android:id="@+id/idTVAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="Enter address Below"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/idETPassWord" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:id="@+id/idETAddress"
+        android:hint="Password Here:"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/idTVAddress"/>
+
+    <TextView
+        android:id="@+id/idTVEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="Enter Email Below"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/idETAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:id="@+id/idETEmail"
+        android:hint="Password Here:"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/idTVEmail"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Validate"
         android:textColor="@color/white"
         android:id="@+id/idBtnValidate"
-        app:layout_constraintTop_toBottomOf="@id/idETPassWord"
+        app:layout_constraintTop_toBottomOf="@id/idETEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="#2196F3"

@@ -6,16 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Welcome">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="556dp"
-        android:layout_height="735dp"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTVDetail"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        android:textAlignment="center"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:scaleType="centerCrop"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/welcome" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
